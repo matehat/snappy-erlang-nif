@@ -1,12 +1,13 @@
-{application, snappy,
+{application, snappy_nif,
  [
   {description, "snappy compressor/decompressor Erlang NIF wrapper"},
-  {vsn, "1.1.1"},
+  {vsn, "1.1.2"},
   {registered, []},
   {applications, [
                   kernel,
                   stdlib
                  ]},
   {env, []},
-  {modules, [snappy]}
+  {modules, [snappy]},{licenses, ["MIT"]}
+ ,{links, [{"Github", "https://github.com/matehat/snappy-erlang-nif"}]}
  ]}.
